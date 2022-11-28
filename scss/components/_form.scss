@@ -1,0 +1,46 @@
+.form{
+    overflow: hidden;
+    &_wrapper {
+        margin: 90px auto;
+        padding: 20px;
+        @include flex;
+    } 
+    &_left {
+        background: linear-gradient(to top, #1E1A3E, #484473);
+        width: 310px;
+        height: 520px;
+        color: $white;
+        @include border-radius;
+        position: relative;
+
+        &_information {
+            padding: 25px;
+        }
+
+        &_links {
+            @include links;
+        }
+
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+
+    }
+
+    &_right {
+        background: $white;
+        width: 510px;
+        height: 500px;
+        @include border-radius;
+
+        button {
+            background-color: #484473;
+            color: $white;
+            border: none;
+            @include border-radius;
+            height: 35px;
+         }
+    }
+}
+
